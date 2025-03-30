@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>♥♥ Wanzii ♥♥ by Shanecore_systems™</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Game elements will be added here -->
+        <div class="witch" id="witch"></div>
+        
+        <div id="ui-container">
+            <div class="ui-panel" id="score-display">Score: 0</div>
+            <div id="instruction-display">Pop Apples Only!</div>
+            
+            <div id="mobile-controls">
+                <div class="control-btn" id="left-btn">←</div>
+                <div class="control-btn" id="right-btn">→</div>
+            </div>
+        </div>
+        
+        <!-- Home Button -->
+        <div class="home-btn" id="home-button">🏠</div>
+        
+        <!-- Start Screen with hearts -->
+        <div class="game-screen" id="start-screen">
+            <div style="text-align: center; transform: translateZ(50px);">
+                <div class="game-title">♥♥ Wanzii ♥♥</div>
+                <div class="game-subtitle">by shanecore_systems<span class="tm-symbol">™</span></div>
+            </div>
+            <p style="color: white; font-size: 4vmin; margin-bottom: 5vmin; max-width: 80%; text-align: center;">
+                Fruits are raining from the clouds! Pop only the fruits that match the instruction.
+            </p>
+            <button class="btn" id="start-button">Start Game</button>
+            <button class="btn" id="options-button">Game Options</button>
+        </div>
+        
+        <!-- Options Screen -->
+        <div class="game-screen" id="options-screen">
+            <div style="text-align: center; margin-bottom: 3vmin;">
+                <div class="game-title" style="font-size: 6vmin;">♥♥ Wanzii ♥♥</div>
+                <div class="game-subtitle">by shanecore_systems<span class="tm-symbol">™</span></div>
+            </div>
+            <div class="options-panel">
+                <h1 style="color: white; text-align: center; margin-bottom: 30px;">Game Options</h1>
+                
+                <div class="option-group">
+                    <h2 class="option-title">Weather</h2>
+                    <div class="option-row">
+                        <label class="option-label">Weather Type:</label>
+                        <select id="weather-select">
+                            <option value="clear">Clear</option>
+                            <option value="rain">Rain</option>
+                            <option value="storm">Storm</option>
+                            <option value="hail">Hail</option>
+                            <option value="fog">Fog</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <h2 class="option-title">Difficulty</h2>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="difficulty-option">
+                            <button class="difficulty-btn selected" data-level="easy">Easy</button>
+                        </div>
+                        <div class="difficulty-option">
+                            <button class="difficulty-btn" data-level="medium">Medium</button>
+                        </div>
+                        <div class="difficulty-option">
+                            <button class="difficulty-btn" data-level="hard">Hard</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn" id="save-options" style="width: 100%; margin-top: 20px;">Save & Play</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
